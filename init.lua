@@ -1,6 +1,6 @@
 require("plugins")
-require("conf/setup")
-require("lsp/setup")
+require("conf/init")
+require("lsp/init")
 
 vim.cmd([[
   augroup packer_user_config

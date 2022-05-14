@@ -12,7 +12,7 @@ local map = vim.api.nvim_set_keymap
 
 map("n", "<A-Left>", ":BufferLineCyclePrev<CR>", opts)
 map("n", "<A-Right>", ":BufferLineCycleNext<CR>", opts)
-map("n", "<Esc>", ":NvimTreeFocus<CR>", opts)
+map("n", "<A-Up>", ":NvimTreeFocus<CR>", opts)
 
 local pluginKeys = {}
 -- lsp 回调函数快捷键设置

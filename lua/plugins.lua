@@ -42,4 +42,11 @@ require("packer").startup(function()
 	use("akinsho/bufferline.nvim")
 	use("airblade/vim-gitgutter")
 	use("RRethy/vim-illuminate")
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+	use({ "turbio/bracey.vim", run = "npm install --prefix server" })
 end)

@@ -36,8 +36,6 @@ require("packer").startup(function()
 	use("akinsho/toggleterm.nvim")
 	use("rmagatti/auto-session")
 	use("windwp/nvim-autopairs")
-	use("junegunn/fzf")
-	use("junegunn/fzf.vim")
 	use("ethanholz/nvim-lastplace")
 	use("akinsho/bufferline.nvim")
 	use("airblade/vim-gitgutter")
@@ -49,4 +47,10 @@ require("packer").startup(function()
 		end,
 	})
 	use({ "turbio/bracey.vim", run = "npm install --prefix server" })
+	use("ahmedkhalf/project.nvim")
+	use({
+		"nvim-telescope/telescope.nvim",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 end)

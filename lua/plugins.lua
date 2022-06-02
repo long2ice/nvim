@@ -53,4 +53,12 @@ require("packer").startup(function()
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use("simrat39/symbols-outline.nvim")
+	use({
+		"junegunn/fzf",
+		run = function()
+			vim.fn["fzf#install"]()
+		end,
+	})
+	use("junegunn/fzf.vim")
 end)

@@ -1,6 +1,6 @@
 # nvim
 
-This is my personal nvim configuration.
+This is my personal neovim configuration.
 
 ## Screenshots
 

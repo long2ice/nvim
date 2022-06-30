@@ -1,7 +1,7 @@
 require("conf.nvim-lsp-installer")
 require("conf.nvim-cmp")
 require("conf.neoformat")
-require("conf.auto-save")
+-- require("conf.auto-save")
 require("conf.lualine")
 require("conf.dracula")
 require("conf.indent-blankline")

@@ -59,4 +59,5 @@ require("packer").startup(function()
 		end,
 	})
 	use("junegunn/fzf.vim")
+	use({ "fatih/vim-go", run = ":GoUpdateBinaries" })
 end)

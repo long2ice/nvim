@@ -6,7 +6,6 @@ require("packer").startup(function()
 	use("lukas-reineke/indent-blankline.nvim")
 	use("numToStr/Comment.nvim")
 	use("majutsushi/tagbar")
-
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
@@ -44,13 +43,19 @@ require("packer").startup(function()
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
-	use({ "turbio/bracey.vim", run = "npm install --prefix server" })
+	use({
+		"turbio/bracey.vim",
+		run = "npm install --prefix server",
+	})
 	use("ahmedkhalf/project.nvim")
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use({
+		"nvim-telescope/telescope-fzf-native.nvim",
+		run = "make",
+	})
 	use("simrat39/symbols-outline.nvim")
 	use({
 		"junegunn/fzf",
@@ -59,6 +64,6 @@ require("packer").startup(function()
 		end,
 	})
 	use("junegunn/fzf.vim")
-	use("APZelos/blamer.nvim")
 	use("isobit/vim-caddyfile")
+	use("dstein64/vim-startuptime")
 end)

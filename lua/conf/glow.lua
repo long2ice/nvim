@@ -1,1 +1,1 @@
-vim.g.glow_style = "auto"
+require("glow").setup({})

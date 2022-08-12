@@ -14,6 +14,7 @@ map("n", "<A-Left>", ":BufferLineCyclePrev<CR>", opts)
 map("n", "<A-Right>", ":BufferLineCycleNext<CR>", opts)
 map("n", "<A-Up>", ":NvimTreeFocus<CR>", opts)
 map("n", "<C-F>", ":Telescope find_files<CR>", opts)
+map("n", "<C-P>", ":Telescope projects<CR>", opts)
 
 local pluginKeys = {}
 -- lsp 回调函数快捷键设置

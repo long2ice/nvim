@@ -52,6 +52,7 @@ require("packer").startup(function()
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use({ "nvim-telescope/telescope-file-browser.nvim" })
 	use({
 		"nvim-telescope/telescope-fzf-native.nvim",
 		run = "make",
@@ -66,4 +67,6 @@ require("packer").startup(function()
 	use("junegunn/fzf.vim")
 	use("isobit/vim-caddyfile")
 	use("dstein64/vim-startuptime")
+	use("folke/trouble.nvim")
+	use("j-hui/fidget.nvim")
 end)

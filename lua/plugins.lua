@@ -17,7 +17,7 @@ require("packer").startup(function()
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind-nvim")
 	use("sbdchd/neoformat")
-	use("Pocco81/AutoSave.nvim")
+	use("Pocco81/auto-save.nvim")
 	use("b0o/schemastore.nvim")
 	use({
 		"kyazdani42/nvim-tree.lua",

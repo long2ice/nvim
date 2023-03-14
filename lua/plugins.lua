@@ -20,8 +20,8 @@ require("packer").startup(function()
 	use("Pocco81/auto-save.nvim")
 	use("b0o/schemastore.nvim")
 	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = { "kyazdani42/nvim-web-devicons" },
+		"nvim-tree/nvim-tree.lua",
+		requires = { "nvim-tree/nvim-web-devicons" },
 	})
 	use("Mofiqul/dracula.nvim")
 	use("nvim-lualine/lualine.nvim")

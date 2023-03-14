@@ -1,1 +1,1 @@
-vim.g.dracula_transparent_bg = true
+require("dracula").setup({ transparent_bg=true} )

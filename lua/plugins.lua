@@ -1,9 +1,9 @@
 local use = require("packer").use
+
 require("packer").startup(function()
 	use("wbthomason/packer.nvim")
 	use("williamboman/nvim-lsp-installer")
 	use("neovim/nvim-lspconfig")
-	use("lukas-reineke/indent-blankline.nvim")
 	use("numToStr/Comment.nvim")
 	use("majutsushi/tagbar")
 	use("hrsh7th/cmp-nvim-lsp")
@@ -13,7 +13,6 @@ require("packer").startup(function()
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")
-
 	use("rafamadriz/friendly-snippets")
 	use("onsails/lspkind-nvim")
 	use("sbdchd/neoformat")
@@ -47,7 +46,6 @@ require("packer").startup(function()
 		"turbio/bracey.vim",
 		run = "npm install --prefix server",
 	})
-	use("ahmedkhalf/project.nvim")
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
@@ -57,6 +55,7 @@ require("packer").startup(function()
 		"nvim-telescope/telescope-fzf-native.nvim",
 		run = "make",
 	})
+	use("nvim-telescope/telescope-project.nvim")
 	use("simrat39/symbols-outline.nvim")
 	use({
 		"junegunn/fzf",
@@ -70,4 +69,5 @@ require("packer").startup(function()
 	use("folke/trouble.nvim")
 	use("j-hui/fidget.nvim")
 	use("github/copilot.vim")
+	use("lukas-reineke/indent-blankline.nvim")
 end)

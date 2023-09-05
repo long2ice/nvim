@@ -1,73 +1,70 @@
-local use = require("packer").use
-
-require("packer").startup(function()
-	use("wbthomason/packer.nvim")
-	use("williamboman/nvim-lsp-installer")
-	use("neovim/nvim-lspconfig")
-	use("numToStr/Comment.nvim")
-	use("majutsushi/tagbar")
-	use("hrsh7th/cmp-nvim-lsp")
-	use("hrsh7th/cmp-buffer")
-	use("hrsh7th/cmp-path")
-	use("hrsh7th/cmp-cmdline")
-	use("hrsh7th/nvim-cmp")
-	use("hrsh7th/cmp-vsnip")
-	use("hrsh7th/vim-vsnip")
-	use("rafamadriz/friendly-snippets")
-	use("onsails/lspkind-nvim")
-	use("sbdchd/neoformat")
-	use("Pocco81/auto-save.nvim")
-	use("b0o/schemastore.nvim")
-	use({
+require("lazy").setup({
+	"williamboman/nvim-lsp-installer",
+	"neovim/nvim-lspconfig",
+	"numToStr/Comment.nvim",
+	"majutsushi/tagbar",
+	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-vsnip",
+	"hrsh7th/vim-vsnip",
+	"rafamadriz/friendly-snippets",
+	"onsails/lspkind-nvim",
+	"sbdchd/neoformat",
+	"Pocco81/auto-save.nvim",
+	"b0o/schemastore.nvim",
+	{
 		"nvim-tree/nvim-tree.lua",
-		requires = { "nvim-tree/nvim-web-devicons" },
-	})
-	use("Mofiqul/dracula.nvim")
-	use("nvim-lualine/lualine.nvim")
-	use({
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+	"Mofiqul/dracula.nvim",
+	"nvim-lualine/lualine.nvim",
+	{
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
-	})
-	use("ellisonleao/glow.nvim")
-	use("akinsho/toggleterm.nvim")
-	use("rmagatti/auto-session")
-	use("windwp/nvim-autopairs")
-	use("ethanholz/nvim-lastplace")
-	use("akinsho/bufferline.nvim")
-	use("airblade/vim-gitgutter")
-	use("RRethy/vim-illuminate")
-	use({
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
+	"ellisonleao/glow.nvim",
+	"akinsho/toggleterm.nvim",
+	"rmagatti/auto-session",
+	"windwp/nvim-autopairs",
+	"ethanholz/nvim-lastplace",
+	"akinsho/bufferline.nvim",
+	"airblade/vim-gitgutter",
+	"RRethy/vim-illuminate",
+	{
 		"iamcco/markdown-preview.nvim",
 		run = function()
 			vim.fn["mkdp#util#install"]()
 		end,
-	})
-	use({
+	},
+	{
 		"turbio/bracey.vim",
 		run = "npm install --prefix server",
-	})
-	use({
+	},
+	{
 		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
-	use({ "nvim-telescope/telescope-file-browser.nvim" })
-	use({
+	},
+	{ "nvim-telescope/telescope-file-browser.nvim" },
+	{
 		"nvim-telescope/telescope-fzf-native.nvim",
 		run = "make",
-	})
-	use("nvim-telescope/telescope-project.nvim")
-	use("simrat39/symbols-outline.nvim")
-	use({
+	},
+	"nvim-telescope/telescope-project.nvim",
+	"simrat39/symbols-outline.nvim",
+	{
 		"junegunn/fzf",
 		run = function()
 			vim.fn["fzf#install"]()
 		end,
-	})
-	use("junegunn/fzf.vim")
-	use("isobit/vim-caddyfile")
-	use("dstein64/vim-startuptime")
-	use("folke/trouble.nvim")
-	use("j-hui/fidget.nvim")
-	use("github/copilot.vim")
-	use("lukas-reineke/indent-blankline.nvim")
-end)
+	},
+	"junegunn/fzf.vim",
+	"isobit/vim-caddyfile",
+	"dstein64/vim-startuptime",
+	"folke/trouble.nvim",
+	"j-hui/fidget.nvim",
+	"github/copilot.vim",
+	"lukas-reineke/indent-blankline.nvim",
+})

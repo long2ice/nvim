@@ -16,6 +16,8 @@ require("nvim-treesitter.configs").setup({
 		"markdown",
 		"sql",
 	},
+	auto_install = true,
+	ignore_install = {},
 	sync_install = false,
 	highlight = {
 		enable = true,

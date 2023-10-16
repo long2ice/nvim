@@ -66,5 +66,5 @@ require("lazy").setup({
 	"folke/trouble.nvim",
 	"j-hui/fidget.nvim",
 	"github/copilot.vim",
-	"lukas-reineke/indent-blankline.nvim",
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 })

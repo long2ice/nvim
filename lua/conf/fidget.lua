@@ -1,1 +1,1 @@
-require("fidget").setup({ tag = "legacy" })
+require("fidget").setup()
